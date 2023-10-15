@@ -1,0 +1,35 @@
+ORG 0000h
+	MOV P0, #0FFh	;設定輸入腳位
+	MOV P1, #0FFh	;清空輸出
+
+	MOV A, #0EFh	;設定初始值
+	MOV P1, A	;輸出到P1 
+
+REPEAT :
+	JNB P2.0, Player0
+	JNB P2.1, Player1
+	LCALL DELAY	;延遲
+	LJMP REPEAT	;無窮迴圈
+Player0:
+WAITPO:
+	JNB P2.0, WAITPO
+	RL A
+	MOV P1, A	;輸出到P1
+	LJMP REPEAT
+Player1:
+WAITP1 :
+	JNB P2.1, WAITP1
+	RR A
+	MOV P1, A	;輸出到P1
+	LJMP REPEAT
+
+
+DELAY:
+	MOV R0,#0FFh
+LOOP1:
+	MOV R1,#0FFh
+LOOP2:
+	DJNZ R1, LOOP2
+	DJNZ R0, LOOP1
+RET
+END
