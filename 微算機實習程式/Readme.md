@@ -46,6 +46,10 @@ UART_ISR:
 	RET
 ;
 	END
+```
+-8051 C語言的基本模板
+```
+
 General C Program Structure, SDCC.c
 // Template for SDCC 8051 C program
 
