@@ -1,7 +1,6 @@
 - 語法筆記 組合語言
 - 組合語言的基本模板
-,,,
-
+```
 ORG	0000h
 	SJMP	START
 ;
@@ -73,4 +72,4 @@ void T1_ISR(void) __interrupt 3
 {}
 void UART_ISR(void) __interrupt 4
 {}
-,,,
+```
