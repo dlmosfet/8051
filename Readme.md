@@ -6,3 +6,4 @@ http://www.formosaos.url.tw/my8051/8051_mcu.html
 - MIDE-51 Studio 編譯器，組譯器
 - JSIM-51 Simulator
 - Terminal Emulator Tera Term Pro V2.3
+- SDCC https://sdcc.sourceforge.net/
