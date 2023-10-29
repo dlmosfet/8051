@@ -47,7 +47,7 @@ UART_ISR:
 ;
 	END
 ```
--8051 C語言的基本模板
+- 8051 C語言的基本模板
 ```
 
 General C Program Structure, SDCC.c
