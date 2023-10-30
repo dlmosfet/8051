@@ -77,3 +77,4 @@ void T1_ISR(void) __interrupt 3
 void UART_ISR(void) __interrupt 4
 {}
 ```
+- 常用指令
